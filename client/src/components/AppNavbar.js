@@ -15,6 +15,7 @@ class AppNavBar extends Component {
             isOpen: false
     }
     
+    
     toggle = () => {
         this.setState({
             isOpen: !this.state.isOpen
@@ -29,7 +30,7 @@ class AppNavBar extends Component {
                 <Container>
                     <NavbarBrand href="/">ShoppingList</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
-                    <Collapse isOpen={this.state.isOpen}>
+                    <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className='ml-auto' navbar>
                             <NavItem>
                                 <NavLink href='https://github.com/wbenarto'>
